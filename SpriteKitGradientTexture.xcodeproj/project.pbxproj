@@ -16,6 +16,7 @@
 		C855CDD11FB894F800035699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C855CDD01FB894F800035699 /* Assets.xcassets */; };
 		C855CDD41FB894F800035699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C855CDD21FB894F800035699 /* LaunchScreen.storyboard */; };
 		C855CDF81FB8973200035699 /* SKTexture+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855CDF71FB8973200035699 /* SKTexture+Gradient.swift */; };
+		C855CDFB1FB8AAB400035699 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = C855CDFA1FB8AAB400035699 /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		C855CDE51FB894F800035699 /* SpriteKitGradientTextureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKitGradientTextureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C855CDF71FB8973200035699 /* SKTexture+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKTexture+Gradient.swift"; sourceTree = "<group>"; };
 		C855CDF91FB8A92E00035699 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C855CDFA1FB8AAB400035699 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				C855CDF91FB8A92E00035699 /* README.md */,
+				C855CDFA1FB8AAB400035699 /* LICENSE */,
 				C855CDC21FB894F800035699 /* SpriteKitGradientTexture */,
 				C855CDC11FB894F800035699 /* Products */,
 			);
@@ -220,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C855CDFB1FB8AAB400035699 /* LICENSE in Resources */,
 				C855CDCF1FB894F800035699 /* Main.storyboard in Resources */,
 				C855CDC61FB894F800035699 /* GameScene.sks in Resources */,
 				C855CDD11FB894F800035699 /* Assets.xcassets in Resources */,
