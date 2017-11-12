@@ -15,8 +15,7 @@
 		C855CDCF1FB894F800035699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C855CDCD1FB894F800035699 /* Main.storyboard */; };
 		C855CDD11FB894F800035699 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C855CDD01FB894F800035699 /* Assets.xcassets */; };
 		C855CDD41FB894F800035699 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C855CDD21FB894F800035699 /* LaunchScreen.storyboard */; };
-		C855CDDF1FB894F800035699 /* SpriteKitGradientTextureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855CDDE1FB894F800035699 /* SpriteKitGradientTextureTests.swift */; };
-		C855CDEA1FB894F800035699 /* SpriteKitGradientTextureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855CDE91FB894F800035699 /* SpriteKitGradientTextureUITests.swift */; };
+		C855CDF81FB8973200035699 /* SKTexture+Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C855CDF71FB8973200035699 /* SKTexture+Gradient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +47,9 @@
 		C855CDD31FB894F800035699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C855CDD51FB894F800035699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C855CDDA1FB894F800035699 /* SpriteKitGradientTextureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKitGradientTextureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C855CDDE1FB894F800035699 /* SpriteKitGradientTextureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitGradientTextureTests.swift; sourceTree = "<group>"; };
-		C855CDE01FB894F800035699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C855CDE51FB894F800035699 /* SpriteKitGradientTextureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpriteKitGradientTextureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C855CDE91FB894F800035699 /* SpriteKitGradientTextureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitGradientTextureUITests.swift; sourceTree = "<group>"; };
-		C855CDEB1FB894F800035699 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C855CDF71FB8973200035699 /* SKTexture+Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SKTexture+Gradient.swift"; sourceTree = "<group>"; };
+		C855CDF91FB8A92E00035699 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +80,8 @@
 		C855CDB71FB894F800035699 = {
 			isa = PBXGroup;
 			children = (
+				C855CDF91FB8A92E00035699 /* README.md */,
 				C855CDC21FB894F800035699 /* SpriteKitGradientTexture */,
-				C855CDDD1FB894F800035699 /* SpriteKitGradientTextureTests */,
-				C855CDE81FB894F800035699 /* SpriteKitGradientTextureUITests */,
 				C855CDC11FB894F800035699 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,6 +103,7 @@
 				C855CDC51FB894F800035699 /* GameScene.sks */,
 				C855CDC71FB894F800035699 /* Actions.sks */,
 				C855CDC91FB894F800035699 /* GameScene.swift */,
+				C855CDF71FB8973200035699 /* SKTexture+Gradient.swift */,
 				C855CDCB1FB894F800035699 /* GameViewController.swift */,
 				C855CDCD1FB894F800035699 /* Main.storyboard */,
 				C855CDD01FB894F800035699 /* Assets.xcassets */,
@@ -114,24 +111,6 @@
 				C855CDD51FB894F800035699 /* Info.plist */,
 			);
 			path = SpriteKitGradientTexture;
-			sourceTree = "<group>";
-		};
-		C855CDDD1FB894F800035699 /* SpriteKitGradientTextureTests */ = {
-			isa = PBXGroup;
-			children = (
-				C855CDDE1FB894F800035699 /* SpriteKitGradientTextureTests.swift */,
-				C855CDE01FB894F800035699 /* Info.plist */,
-			);
-			path = SpriteKitGradientTextureTests;
-			sourceTree = "<group>";
-		};
-		C855CDE81FB894F800035699 /* SpriteKitGradientTextureUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C855CDE91FB894F800035699 /* SpriteKitGradientTextureUITests.swift */,
-				C855CDEB1FB894F800035699 /* Info.plist */,
-			);
-			path = SpriteKitGradientTextureUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +252,7 @@
 				C855CDCA1FB894F800035699 /* GameScene.swift in Sources */,
 				C855CDCC1FB894F800035699 /* GameViewController.swift in Sources */,
 				C855CDC41FB894F800035699 /* AppDelegate.swift in Sources */,
+				C855CDF81FB8973200035699 /* SKTexture+Gradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +260,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C855CDDF1FB894F800035699 /* SpriteKitGradientTextureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C855CDEA1FB894F800035699 /* SpriteKitGradientTextureUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
