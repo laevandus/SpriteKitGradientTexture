@@ -36,7 +36,7 @@ final class GameScene: SKScene
                                     UIColor(red: 108.0 / 255.0, green: 91.0 / 255.0, blue: 123.0 / 255.0, alpha: 1.0),
                                     UIColor(red: 192.0 / 255.0, green: 108.0 / 255.0, blue: 132.0 / 255.0, alpha: 1.0)]
         let linearGradientLocations: [CGFloat] = [0, 0.5, 1]
-        let textureCount = 64
+        let textureCount = 8
         let textures = (0..<textureCount).map { (index) -> SKTexture in
             let angle = 2.0 * CGFloat.pi / CGFloat(textureCount) * CGFloat(index)
             return SKTexture(linearGradientWithAngle: angle, colors: linearGradientColors, locations: linearGradientLocations, size: linearGradientSize)
@@ -46,7 +46,7 @@ final class GameScene: SKScene
         linearGradientNode.zPosition = 1
         addChild(linearGradientNode)
         
-        let action = SKAction.animate(with: textures, timePerFrame: 0.1)
+        let action = SKAction.animate(with: textures, timePerFrame: 0.5)
         linearGradientNode.run(SKAction.repeatForever(action))
         
         let radialGradientSize = CGSize(width: min(size.width, size.height), height: min(size.width, size.height))
